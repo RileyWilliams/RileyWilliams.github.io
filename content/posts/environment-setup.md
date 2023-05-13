@@ -4,7 +4,9 @@ date: 2023-05-13T13:33:16+01:00
 draft: false
 ---
 
-# Environment configuration when setting up a new device
+This post details the steps required when setting up and customising command line utilities on a new device / fresh install.
+
+----
 
 ## ZSH 
 
