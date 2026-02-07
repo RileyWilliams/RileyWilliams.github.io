@@ -1,8 +1,33 @@
+<!-- Inter font for body text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <!-- Custom styles -->
 <style>
+    /* Proportional font for body text */
+    body, html {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* Keep monospace for code */
+    code, pre, pre code {
+        font-family: 'JetBrains Mono', monospace;
+    }
+
     /* Reduce header gap */
     header {
         margin-bottom: 0;
+    }
+
+    /* Logo sizing */
+    #titleContainer img {
+        width: 32px;
+        max-height: 32px;
+        margin-top: 4px;
+    }
+    #titleContainer h1 {
+        white-space: nowrap;
     }
 
     /* Home page post list spacing */

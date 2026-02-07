@@ -7,7 +7,7 @@ dark:
   fg: "#e0e0e0"
   dim_fg: "#a0a0a0"
   stroke: "#404040"
-  accent: "#00d4aa"
+  accent: "#7fa686"
 
 light:
   bg: "#fafafa"
@@ -15,4 +15,4 @@ light:
   fg: "#1a1a1a"
   dim_fg: "#505050"
   stroke: "#d0d0d0"
-  accent: "#00a080"
+  accent: "#5a8a63"
