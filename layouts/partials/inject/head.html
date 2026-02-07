@@ -1,1 +1,69 @@
-<!-- This code will be injected before closing the head tag -->
+<!-- Custom styles -->
+<style>
+    /* Reduce header gap */
+    header {
+        margin-bottom: 0;
+    }
+
+    /* Home page post list spacing */
+    .postlistitem.card h2 {
+        margin-bottom: 0.5em;
+    }
+    .postlistitem.card .date {
+        margin-bottom: 1em;
+    }
+    .postlistitem.card .articlePreview {
+        margin-top: 0.5em;
+    }
+
+    /* Improved line-height for readability */
+    .articlePreview p,
+    article.single > div p,
+    article.single > div li {
+        line-height: 1.7;
+    }
+
+    /* Reading time styling */
+    .reading-time {
+        color: var(--default_dim_fg);
+        font-size: 0.9em;
+    }
+
+    /* Code block improvements */
+    pre {
+        position: relative;
+        background-color: var(--default_hl_bg);
+    }
+    pre code {
+        display: block;
+        padding: 0;
+    }
+
+    /* Copy button for code blocks */
+    .copy-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 4px 8px;
+        font-size: 0.75em;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.2s;
+        border: 1px solid var(--default_stroke);
+        background: var(--default_bg);
+        color: var(--default_dim_fg);
+        border-radius: 4px;
+    }
+    pre:hover .copy-button {
+        opacity: 1;
+    }
+    .copy-button:hover {
+        background: var(--default_accent);
+        color: var(--default_bg);
+        border-color: var(--default_accent);
+    }
+    .copy-button.copied {
+        background: var(--default_accent);
+        color: var(--default_bg);
+    }
+</style>

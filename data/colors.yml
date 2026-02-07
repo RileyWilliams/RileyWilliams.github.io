@@ -1,0 +1,18 @@
+default: dark
+auto_switch: false
+
+dark:
+  bg: "#1a1b1e"
+  hl_bg: "#2a2b2e"
+  fg: "#e0e0e0"
+  dim_fg: "#a0a0a0"
+  stroke: "#404040"
+  accent: "#00d4aa"
+
+light:
+  bg: "#fafafa"
+  hl_bg: "#eaeaea"
+  fg: "#1a1a1a"
+  dim_fg: "#505050"
+  stroke: "#d0d0d0"
+  accent: "#00a080"
