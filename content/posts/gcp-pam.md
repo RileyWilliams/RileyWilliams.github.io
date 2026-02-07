@@ -9,7 +9,9 @@ toc: true
 There is often a tension between security teams who wish to reduce the scope of access to sensitive resources and 
 engineering teams who (reasonably) want to move quickly so want to do the opposite. Over time this leads to an accrual of excess permissions that are actually only needed for very short periods of time.  But what if there were a better way to manage access to sensitive resources in GCP... Enter [Privileged Access Manager (PAM)](https://docs.cloud.google.com/iam/docs/pam-overview).
 
-PAM is a service that allows us to reduce standing access to sensitive resources by granting access only when needed, for a limited amount of time. It provides a centralised way for users to request and grant access directly in GCP without relying on third party tooling. 
+## What is PAM?
+
+PAM is a service that allows us to reduce *standing access* to sensitive resources by granting access **only when needed**, for a **limited amount of time**. It provides a centralised way for users to request and grant access directly in GCP without relying on third party tooling. 
 
 ## Why would I want to use this?
 
@@ -37,15 +39,15 @@ You might not! This may not be a control you need and it depends on the threat m
 
 ## Core concepts
 
-There are two main concepts in GCP PAM, Entitlements and Grants.
+There are two main concepts in GCP PAM: **Entitlements** and **Grants**.
 
 ### Entitlements
 
-Entitlements define which principals (user, service account, group) can request access to specific roles and for how long. Optionally they can specify an approver team or user.
+Entitlements define which *principals* (user, service account, group) can request access to specific roles and for how long. Optionally they can specify an approver team or user.
 
 ### Grants
 
-Grants are time bound instantiations of an Entitlement for a specific principal.
+Grants are **time-bound** instantiations of an Entitlement for a specific principal.
 
 
 ### Access Request Flow
@@ -134,7 +136,7 @@ gcloud beta pam grants create \
 - Allow self approval to start with (or forever if it meets your security requirements)
 - Start small (either small group of users or roles) and gradually expand as you build trust in the system.
 - Require a justification for break glass requests, but avoid overusing if not required.
-- Start with broadly scoped access then use Policy analyser to refine.
+- Start with broadly scoped access then use [Policy Analyser](https://cloud.google.com/policy-intelligence/docs/analyze-iam-policies) to refine.
 
 
 ## Resources
