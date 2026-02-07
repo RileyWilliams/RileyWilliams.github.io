@@ -12,3 +12,22 @@
 
   await mermaid.run();
 </script>
+<script>
+  document.querySelectorAll('pre').forEach((pre) => {
+    if (pre.querySelector('.mermaid')) return;
+    const button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    button.addEventListener('click', async () => {
+      const code = pre.querySelector('code');
+      await navigator.clipboard.writeText(code.textContent);
+      button.textContent = 'Copied!';
+      button.classList.add('copied');
+      setTimeout(() => {
+        button.textContent = 'Copy';
+        button.classList.remove('copied');
+      }, 2000);
+    });
+    pre.appendChild(button);
+  });
+</script>
