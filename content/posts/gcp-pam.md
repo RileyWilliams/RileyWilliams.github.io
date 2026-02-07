@@ -3,6 +3,7 @@ title: "Setting up GCP Privileged Access Management"
 date: 2026-02-07T12:00:00+00:00
 draft: false
 tags: ["GCP", "IAM", "Security", "PAM"]
+toc: true
 ---
 
 There is often a tension between security teams who wish to reduce the scope of access to sensitive resources and 
