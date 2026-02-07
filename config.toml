@@ -9,7 +9,8 @@ defaultContentLanguage = "en"
 # you can use markdown inside this field
 copyright = "Riley Williams"
 
-paginate = 5  # number of articles per page in the index
+[pagination]
+    pagerSize = 5  # number of articles per page in the index
 summaryLength = 50  # number of words for article summaries
 
 
