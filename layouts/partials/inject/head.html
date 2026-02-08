@@ -26,8 +26,19 @@
         max-height: 32px;
         margin-top: 4px;
     }
-    #titleContainer h1 {
-        white-space: nowrap;
+
+    /* Mobile fixes */
+    @media (max-width: 520px) {
+        #titleContainer h1 {
+            font-size: 1.2em;
+        }
+        .titleAndSearchContainer {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .search {
+            width: 100%;
+        }
     }
 
     /* Home page post list spacing */
